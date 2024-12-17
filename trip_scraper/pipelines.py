@@ -6,7 +6,7 @@ from sqlalchemy import create_engine
 class TripPipeline:
     def __init__(self):
         engine = create_engine(
-            "postgresql+psycopg2://good_luck_zasia:zasia_assignment6@postgres_trip:5432/trip_db",
+            "postgresql+psycopg2://<username>:<password>@postgres_trip:5432/trip_db",
             pool_size=20,
             max_overflow=30,
             pool_timeout=120,
